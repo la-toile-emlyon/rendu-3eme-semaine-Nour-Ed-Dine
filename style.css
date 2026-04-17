@@ -10,6 +10,8 @@
     font-family: Raleway, serif;
     font-size: 18px;
     color: var(--textcolor);
+    text-decoration: none;
+    list-style: none;
 }
 
 .container{
@@ -17,7 +19,7 @@
     margin: auto;
 }
 section{
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .headerflex{
@@ -28,8 +30,9 @@ section{
     margin-bottom: 40px;
 }
 
-header img{
+.logo{
     width: 100px;
+    height: 100px;
 }
 
 nav{
@@ -39,8 +42,9 @@ nav{
     gap: 20px;
 }
 
-a{
-    text-decoration: none;
+.btnav{
+    border-bottom: 1px solid #414a4c;
+    padding: 5px 0;
 }
 
 .contactbtn{
@@ -48,7 +52,7 @@ a{
     background-color: var(--primarycolor);
     border-radius: 5px 0 5px 0;
     padding: 5px 10px;
-    transition: 0,3s ease;   
+    width: fit-content;
 }
 
 
@@ -66,7 +70,9 @@ h1{
 h2{
     font-size: 24px;
     font-family: Montserrat, serif;
+    margin-bottom: 30px;
 }
+
 .heroflex{
     display: flex;
     flex-direction: row;
@@ -79,7 +85,6 @@ h2{
     align-items: flex-start;
     justify-content: center;
     gap: 24px;
-
 }
 
 .containerbtn{
@@ -94,8 +99,9 @@ h2{
     background-color: var(--primarycolor);
     border-radius: 5px 0 5px 0;
     padding: 5px 10px;
-    transition: 0,3s ease;
+    transition: 0.8s ease;
     box-shadow: 0 4px 10px;
+    width: fit-content;
 }
 
 .btn1:hover {
@@ -106,43 +112,56 @@ h2{
     border: 1px solid var(--textcolor);
     border-radius: 5px 0 5px 0;
     padding: 5px 10px;
+    width: fit-content;
 }
 
-.promesse{
+.titre2paragraphe{
     text-align: center;
     width: 800px;
     margin: auto;
     margin-bottom: 24px;
 }
 
-.containerpromesse img{
+.illustration{
     width: 500px;
+    height: 375px;
+    margin-bottom: 24px;
 }
 
-
-.containerpromesse{
+.articleflexrow{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     gap: 24px;
 }
 
-ul{
-    list-style: none;
+.liste{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 40px;
+    gap: 24px;
 }
 
-.imageservices{
-    width: 250px;
+li{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+}
+
+.material-symbols-outlined{
+    font-size: 18px;
+    color: #d6a184;
+}
+.services article img{
+    width: 80%;
+    height: 160px;
 }
 
 .services{
     display: flex;
     flex-direction: row;
+    gap:12px;
 }
 
 .services article{
@@ -150,13 +169,10 @@ ul{
     flex-direction: column;
     align-items: center;
     gap: 24px;
-}
-
-.realisationsrow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px 0 5px 0;
+    box-shadow: 0 4px 10px;
 }
 
 .realisationsreverserow{
@@ -168,7 +184,7 @@ ul{
 
 .realisationstexte{
     text-align: justify;
-    width: 400px;
+    width: 500px;
     margin: auto;
 }
 
@@ -178,8 +194,6 @@ ul{
 
 .imagetemoin{
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
 }
 
 .containertemoignage{
@@ -188,21 +202,56 @@ ul{
     gap: 24px;
 }
 
-.containertemoignage article div{
-    border-radius: 10px;
-    box-shadow: 0 4px 10px;
+.containertemoignage article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 12px;
 }
 
+.nomtemoin{
+    font-weight: bold;
+}
+
+.containertemoignage article img{
+    width: 50px;
+}
+
+.containertemoignage article p{
+    font-style: italic;
+}
 
 .formulaire{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
+    justify-content: space-between;
 }
 
-.formulaire{
+.formulairetexte{
+    width: 400px;
+}  
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
+input{
+    width: 400px;
+}
+
+.formbtn{
+    font-size: 18px;
+    background-color: var(--textcolor);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: fit-content;
+}
 
